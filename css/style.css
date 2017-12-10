@@ -174,20 +174,20 @@ p a:hover {
 	margin:0 0 24px;
 	text-align:right;
 }
-#body.subdivisions ul li {
+#body.curriculumvitae ul li {
 	margin:0 0 40px;
 	overflow:hidden;
 }
-#body.subdivisions ul li div {
+#body.curriculumvitae ul li div {
 	float:left;
 	margin:0 45px 0 0;
 	width:585px;
 }
-#body.subdivisions ul li div p {
+#body.curriculumvitae ul li div p {
 	margin:6px 0 0;
 	text-align:justify;
 }
-#body.subdivisions ul li > a {
+#body.curriculumvitae ul li > a {
 	float:right;
 }
 #body.about p {
@@ -428,12 +428,12 @@ p a:hover {
 #body.home .blog div h3 a:hover, #body.home .article div h3 a:hover, #body.home .news div h3 a:hover, #body.subdivisions ul li div h3 a:hover, #body.contact h3 a:hover, #body.blog > div:first-child > ul > li > div h3 a:hover {
 	text-decoration:underline;
 }
-#body.subdivisions ul, #body.blog > div:first-child > ul {
+#body.curriculumvitae ul, #body.blog > div:first-child > ul {
 	list-style:none;
 	margin:0;
 	padding:0;
 }
-#body.subdivisions ul li div h3, #body.about h3 {
+#body.curriculumvitae ul li div h3, #body.about h3 {
 	color:#e49e06;
 	font-family:anticregular;
 	font-size:20px;
@@ -442,7 +442,7 @@ p a:hover {
 	line-height:24px;
 	margin:14px 0 0;
 }
-#body.subdivisions ul li > a img:hover, #body.blog > div:first-child > ul > li > a img:hover {
+#body.curriculumvitae ul li > a img:hover, #body.blog > div:first-child > ul > li > a img:hover {
 	filter:alpha(opacity=90);/* Needed for IE8 and old versions */
 	opacity:0.9;
 }
