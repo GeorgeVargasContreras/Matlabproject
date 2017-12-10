@@ -433,7 +433,7 @@ p a:hover {
 	margin:0;
 	padding:0;
 }
-#body.curriculumvitae ul li div h3, #body.about h3 {
+#body.curriculumvitae ul li div h3, #body.matlabcode h3 {
 	color:#e49e06;
 	font-family:anticregular;
 	font-size:20px;
