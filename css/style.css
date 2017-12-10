@@ -190,7 +190,7 @@ p a:hover {
 #body.curriculumvitae ul li > a {
 	float:right;
 }
-#body.about p {
+#body.matlabcode p {
 	margin:6px 0 72px;
 	text-align:justify;
 }
