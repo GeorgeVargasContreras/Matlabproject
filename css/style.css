@@ -425,7 +425,7 @@ p a:hover {
 	color:#1bb5ac;
 	text-decoration:none;
 }
-#body.home .blog div h3 a:hover, #body.home .article div h3 a:hover, #body.home .news div h3 a:hover, #body.curriculumvitae ul li div h3 a:hover, #body.contact h3 a:hover, #body.blog > div:first-child > ul > li > div h3 a:hover {
+#body.home .blog div h3 a:hover, #body.home .article div h3 a:hover, #body.home .news div h3 a:hover, #body.curriculumvitae ul li div h3 a:hover, #body.auxiliary h3 a:hover, #body.results > div:first-child > ul > li > div h3 a:hover {
 	text-decoration:underline;
 }
 #body.curriculumvitae ul, #body.blog > div:first-child > ul {
