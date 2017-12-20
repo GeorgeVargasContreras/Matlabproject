@@ -56,23 +56,46 @@
 		</p>
 		<h3>IV.Autocorrelogram of the time series</h3>
 		<p>
-			Design version 4 <br> Code version 4 <br> Website Template details, discussion and updates for this <a href="http://www.freewebsitetemplates.com/discuss/ecoliving/">Eco Living Website Template</a>. <br> Website Template design by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a>.
+		Another important component to study a time series is computing the correlogram to see autocorrelations function for data values and varying time lags. <br> 
+		Normally the financial time series present a structure in the correlogram which can help to know if the time series are serially correlated between them. <br> 
+		Therefore, I want to test the following hypotheses: <br>
+		H0: Autocorrelation of order k is equal to zero: 𝑟(i)=0 for all i.<br>	
+	        H1: Autocorrelation of order k is different from zero: 𝑟(i)≠0 for all i.<br>
+		I perform the correlogram with 20 lags because we are considering daily returns, therefore 20 lags represent approximately 1 month of trading activity, which is an appropriate period to use in the autocorrelation test.<br>	
+	        <a href="matlabcode.html"><img src="images/Autocorrelogrammatlabcode.png" alt=""></a>	
 		</p>
 		<h3>V.The best ARMA model</h3>
 		<p>
-			Design version 4 <br> Code version 4 <br> Website Template details, discussion and updates for this <a href="http://www.freewebsitetemplates.com/discuss/ecoliving/">Eco Living Website Template</a>. <br> Website Template design by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a>.
+		As consequence that time series present a structure in the correlogram, it is recommended to use an ARMA model and use a criterium as AIC (Akaike information criterion) which is useful to decide the best model, as you can see in the bellow code there are two examples to analyze an ARMA model with the arma reg function and arima and estimate function of econometrics toolbox of matlab: <br> 
+		<a href="matlabcode.html"><img src="images/Armamodelmatlabcode.png" alt=""></a>	
+		<a href="matlabcode.html"><img src="images/Armamodel2matlabcode.png" alt=""></a>	
+		After obtaining the best ARMA model for the series returns you can compute and plot the results and compare them with the initial index time series. Bellow I present one method to do it:<br> 
+		<a href="matlabcode.html"><img src="images/computeArmamodelmatlabcode.png" alt=""></a>	
+		<a href="matlabcode.html"><img src="images/plotarmaibexmatlabcode.png" alt=""></a>	
+		<a href="matlabcode.html"><img src="images/plotarmacacmatlabcode.png" alt=""></a>	
 		</p>
 		<h3>VI.Arch effect</h3>
+		Then, it is important to compute and analyze the residual sample, moreover estimate the arch effect test to verify if the variance is constant or no:<br> 
+	        <a href="matlabcode.html"><img src="images/archeffectmatlabcode.png" alt=""></a>	
 		<p>
-			Design version 4 <br> Code version 4 <br> Website Template details, discussion and updates for this <a href="http://www.freewebsitetemplates.com/discuss/ecoliving/">Eco Living Website Template</a>. <br> Website Template design by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a>.
 		</p>
-		<h3>VII.ARMAX</h3>
+		<h3>VII.ARMAX</h3>	
 		<p>
-			Design version 4 <br> Code version 4 <br> Website Template details, discussion and updates for this <a href="http://www.freewebsitetemplates.com/discuss/ecoliving/">Eco Living Website Template</a>. <br> Website Template design by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a>.
+		With the previews arch test, I identify that the index’s time series do no present problems of Heteroskedasticity meaning that the variance is constant. <br> 
+	        Now, we introduce an exogeneous variable in the model to compute an ARMAX model, in this case the new time series are the index’s volume uploaded in the figure 1. The following code shows one method to compute the best ARMAX with ordinary least square and plot the results to compare them with the initial time series:  <br> 
+		<a href="matlabcode.html"><img src="images/arimaxibexmatlabcode.png" alt=""></a>
+	        <a href="matlabcode.html"><img src="images/arimaxcac40matlabcode.png" alt=""></a>	
 		</p>
 		<h3>VIII.Garch model</h3>
 		<p>
-			Design version 4 <br> Code version 4 <br> Website Template details, discussion and updates for this <a href="http://www.freewebsitetemplates.com/discuss/ecoliving/">Eco Living Website Template</a>. <br> Website Template design by <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a>.
+		In addition, it is important to study the exogeneous time series and verify if they are stationary or not as well as the arch effect. The follow figure displays the analysis of the exogeneous time series: <br> 
+		<a href="matlabcode.html"><img src="images/Exogeneousvariablematlabcode.png" alt=""></a>
+	        <a href="matlabcode.html"><img src="images/archeffectauxiliaryfunctionmatlabcode.png" alt=""></a>
+		I can conclude that the time series are stationary. However, they present problems of Heteroskedasticity (Arch effect). It is recommended to use a family Garch model. <br> 
+		For this reason, I apply Garch model for exogenous variables to estimate the conditional variance of the time series model and later compute the best garch model for both index and plot them as you can see in the below code: <br>
+	        <a href="matlabcode.html"><img src="images/Garchmodelmatlabcode.png" alt=""></a>
+	        <a href="matlabcode.html"><img src="images/PlotGarchmodelcac40matlabcode.png" alt=""></a>
+	        <a href="matlabcode.html"><img src="images/PlotGarchmodelibexmatlabcode.png" alt=""></a>	
 		</p>
 		<p>
 			Please feel free to remove some or all the text and links of this page and replace it with your own About content.
