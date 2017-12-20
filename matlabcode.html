@@ -39,15 +39,20 @@
 		</p>
 		<h3>II.	Preliminary analysis of the time series.</h3>
 		<p>
-		In this code you can see a procedure to download the data from yahoo finance with an auxiliary function to connect since MATLAB, it is necessary write in a correct form the name of securities with the same extinction that yahoo finance, the initial date and final date and the periodicity. <br/>
-		In this case, I analyzed two European index IBEX and CAC40 which are the Madrid and Paris Market Index over a period of 2 years between 26 august 2015 and 26 august 2017.          
-		<a href="matlabcode.html"><img src="images/Graphofbothindex.png" alt=""></a>
-		<a href="matlabcode.html"><img src="images/Dickey-Fuller and Philips Perrot.png" alt=""></a>
-		<a href="matlabcode.html"><img src="images/autocorrelogram.png" alt=""></a>	
+		First, the time series analysis required a basic graph and some statistics to study the behavior of the variables.<br/>
+		Normally, the financial time series are nonstationary because they show a bearish or bullish trend that you can graphically see. However, it is necessary to confirm it applying the Unit Root test of Nonstationary either the Dickey-Fuller or Philips Perrot test. Afterward, the variables should be transformed in their differences, logarithms or returns. <br/>
+		The following code shows how to compute the main statistics in a matrix form, indexes graphs and their transformation and the Dicker Fuller and Phillips Perrot test of unit root of non-stationary.<br/>
+		<a href="matlabcode.html"><img src="images/Descriptivestatisticmatlabcode.png" alt=""></a>
+		<a href="matlabcode.html"><img src="images/Basicgraphmatlabcode.png" alt=""></a>
+		<a href="matlabcode.html"><img src="images/Dickey-Fuller and Philips Perrot.png" alt=""></a>	
 		</p>
 		<h3>III. Ordinary linear square and non-parametric regression</h3>
 		<p>
-			If you're experiencing issues and concerns about this website template, join the discussion <a href="http://www.freewebsitetemplates.com/forums/">on our forum</a> and meet other people in the community who share the same interests with you.
+		 Additionally, it is interesting to study the estimation of ordinary linear square, polynomials of degree 5 and degree 10 and the non-parametric estimation:<br/>	
+		<a href="matlabcode.html"><img src="images/Olsmatlabcode.png" alt=""></a>
+		<a href="matlabcode.html"><img src="images/Nonparametricmatlabcode.png" alt=""></a>
+		 Subsequently, you can plot in the same graph the different estimations by OLS, polynomials functions and non-parametric regression as you can see in the following code:<br/>	
+		<a href="matlabcode.html"><img src="images/Grapholsmatlabcode.png" alt=""></a>
 		</p>
 		<h3>Template Details</h3>
 		<p>
