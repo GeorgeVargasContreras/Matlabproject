@@ -41,7 +41,19 @@
 						<p>
 						In general, I use the statistic and econometrics tool box, these are some functions that I apply: <br>
 						•Datastats(XDATA,YDATA): returns data statistics for XDATA and YDATA in the structures XDS and YDS.<br>
-						•Jbtest(X): Jarque bera Test of normality.<br>	
+						•Jbtest(X): Jarque bera Test of normality.<br>
+						•Kurtosis and skewness functions.<br>
+						•Cell2mat(C): converts a multidimensional cell array with contents of the same data type into a single matrix.<br>
+						•Adftest(y): Advance Dickey-Fuller tests assess the null hypothesis of a unit root in univariate time series y.<br>
+						•Regress(Y,X): returns a vector STATS containing, in the following order, the R-square statistic, the F-statistic and p-value for the full model, and an estimate of the error variance.<br>
+						•Polyfit(X,Y,N): finds the coefficients of a polynomial P(X) of degree N.<br>
+						•Polyval(P,X): returns the value of a polynomial P evaluated at X.<br>
+						•Arima(p,D,q): model by specifying either the degrees p, D, and q and allows the creation of an arima model of the general form.<br>
+						•Estimate(Mdl,Y): estimate the parameters of a regression model with ARIMA time series errors. The estimation process infers the disturbances of the underlying response series and then fits the model to the response data via maximum likelihood.<br>	
+						•Archtest(res): The ARCH test of Engle.<br>
+						•Garch(P,Q): Create a garch(P,Q) conditional variance model by specifying either  the degrees P and Q.<br>
+						•Infer(Mdl,Y): Infer the innovations and unconditional disturbances of a univariate  regression model with ARIMA time series errors.<br>
+						•Simulate(Mdl,numObs): Simulate sample paths of responses, unconditional disturbances, and  innovations of a univariate regression model with ARIMA errors.<br>	
 						</p>
 					</div>
 					<span class="bg-bottom"></span> <span class="triangle"></span>
@@ -50,7 +62,12 @@
 					<div>
 						<h3>Functions created by other authors:</h3>
 						<p>
-							You can remove any link to our website from this website template, you're free to use this website template without linking back to us.
+						•DownloadStocksData(Asset,Date1,Date2,interval)<br>
+						Author: Aitor Roca<br>
+						Source:  https://fr.mathworks.com/matlabcentral/fileexchange/64218-download-historical-financial-data-from-yahoo-?focused=8095300&tab=function <br>
+						•Arma_reg(y, p, q): This function uses a regression approach to initialize the coefficients of the ARMA process.<br>
+						Author: Protopopescu 2010<br>
+						Source: Aix-Marseille University<br>	
 						</p>
 						<div>
 					</div>
@@ -60,7 +77,9 @@
 					<div>
 						<h3>Functions creates in this project:</h3>
 						<p>
-							You can remove any link to our website from this website template, you're free to use this website template without linking back to us.
+						•Autocovariance_empiric(x,H): Estimate autocovariance function (Yule–Walker equations).<br>
+						•RSS2(residuals): This function computes residual sum squared.<br>
+						•Aic_criterion (d,N,RSS2):This function compute the Akaike criterium.<br>
 						</p>
 					</div>
 					<span class="bg-bottom"></span> <span class="triangle"></span>
