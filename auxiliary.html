@@ -33,7 +33,18 @@
 		<h3>Results IBEX35 and CAC40</h3>
 		<p>
 		In this part, I will analyze and present the graphs and tables generated from the preview code.<br>
-		First, the descriptive statistics are showed in the following tables:<br>	
+		First, the descriptive statistics are showed in the following tables:<br>
+		According to some statistic measures, the number of observations are 514, the mean and the standard deviation are lower for the ibex 35 regarding to the CAC40. It is evidenced in figure 18, in which the CAC40 fluctuates with superior units and the range of its movement is higher than IBEX35.  <br>
+		The Jarque Bera(JB) statistical test of normality shows that all variables don’t follow a normal distribution because the statistical test is superior to 6 (JB>=6), then I reject the null hypothesis.<br>
+		H0: JB<6    Time series follow a normal distribution.<br>
+		H1: JB>=6 Time series don’t follow a normal distribution <br>	
+		Additionally, I see that the volume of the index time series is leptokurtic because the Kurtosis is higher than three, meaning that series are more peaked than normal distribution. On the other hand, the index price is platykurtic because the Kurtosis is lower than three, therefore the series are less peaked than normal distribution. <br>	
+		Moreover, the skewness shows that all-time series distributions are skewed to the right because the values are higher than 0.<br>
+		According to the basic graph of the close price for both indexes over a period of 2 years between 2015 and 2016, you can see that the time series are nonstationary because they show a bullish trend. However, if you want to confirm it, you should apply the Dickey-Fuller or Philips Perrot test unit root of Nonstationary. <br>
+		H0:g1=0-Time series has a unit root and is Nonstationary. <br>
+		H1: g1<0-Time series does not have a unit root and is stationary.<br>
+		After estimating the Dickey-Fuller and Philips Perrot test, I can conclude that the time series is nonstationary because the hypothesis null cannot be rejected. In other words, the p-values are higher than 5%.<br>
+		As consequence, I transform both indexes in their differences and the first differences with logarithms or returns. As you can see in the following graphs, the series are stationaries: <br>	
 		</p>
 		<h3>We Have More Templates for You</h3>
 		<p>
