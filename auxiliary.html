@@ -45,10 +45,24 @@
 		H1: g1<0-Time series does not have a unit root and is stationary.<br>
 		After estimating the Dickey-Fuller and Philips Perrot test, I can conclude that the time series is nonstationary because the hypothesis null cannot be rejected. In other words, the p-values are higher than 5%.<br>
 		As consequence, I transform both indexes in their differences and the first differences with logarithms or returns. As you can see in the following graphs, the series are stationaries: <br>	
+		The correlograms of autocorrelation function and their figures show that return series don’t have persistence. It means that they have short memory process because the fluctuation of the ACF decreases quickly, the bars’ size is small and most of autocorrelations aren’t representative.<br>
+		Additionally, it is interesting to study the close price for the IBEX35 and the CAC40 with ordinary linear square and polynomial functions. For instance, the OLS estimation do not apply because evidently there is not a lineal relation. <br>
+		In case of polynomial function with degree 5 and 10 the approximation is more suitable, in the following figures 22 and 23 you can see that the pink line is a polynomial of degree 10 which is a good estimation.<br>	
+		The polynomial of degree n is a function with this form and Coefficients a(n-t):<br>
+		The non-parametric estimation is another way to approximate the real value, first it is necessary to compute h using the Silverman’s rule, estimate the Gaussian Kernel as anonymous function and after compute the small and big bandwidth with Nadayara Watson. <br>
+		In the figures 22 and 23 the yellow line and the green line represent the non-parametric estimation to estimate the small and big bandwidth with c1=0.15 and c2=0.7, therefore you can conclude that it is also an appropriate estimation. <br>
+		In order to apply a better approach, I estimate the best arma model for return of IBEX 35 and CAC 40, which is the lowest Akaike criterium, afterward I compute the price with the following equation:<br>
+		The following figures show the best arma model and the close price estimation:<br>
+		I can conclude that the arma model p=4 and q=2 is a good forecast, however it is required to estimate if the sample residual present arch effect. In this case, the p-value is higher than 5%, for this reason I do not reject the null hypothesis about the constant variance.<br>
+		Now, I introduce an exogeneous variable to propose another kind of model. This type of model is called ARIMAX which has the same structure of the ARMA model, but you can introduce an independent variable. In the bellow charts, you can see in the ARIMAX’s estimation in the blue line and the turnover as exogeneous variable.<br>
+		Moreover, it is important to analyze the index’s volumes to predict or forecast the dependent variable.  In the following chart I show the CAC 40 and IBEX 35 daily volumes.<br>
+		After estimating the Dickey-Fuller test, I can conclude that the volume’s time series are stationary because I cannot reject the null hypothesis. In other words, the critical value is lower than the t-statistic.<br>
+		For the arch effect, the p-value is lower than 5%. For this reason, I rejecte the null hypothesis about the constant variance because the series presents a Heteroskedasticity’s problem. Then, it is recommend to use a family Garch model.<br>	
+		The best garch model is estimated using a boucle with the arima and estimate matlab’s functions, next I choose the model with the lowest Akaike criterium. The bellow graphs exhibit the conditional volatility for IBEX 35 and CAC 40 and the generation of 10 paths or samples.<br>
 		</p>
-		<h3>We Have More Templates for You</h3>
+		<h3>Conclusions</h3>
 		<p>
-			Looking for more templates? Just browse through all our <a href="http://www.freewebsitetemplates.com/">Free Website Templates</a> and find what you’re looking for. But if you don’t find any website template you can use, you can try our <a href="http://www.freewebsitetemplates.com/freewebdesign/">Free Web Design</a> service and tell us all about it. Maybe you’re looking for something diferent, something special. And we love the challenge of doing something diferent and something special.
+			Madre te amo<br>
 		</p>
 		<h3>Be Part of Our Community</h3>
 		<p>
